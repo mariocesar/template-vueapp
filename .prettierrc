@@ -1,0 +1,10 @@
+{
+  "printWidth": 100,
+  "tabWidth": 2,
+  "semi": true,
+  "useTabs": false,
+  "trailingComma": "all",
+  "vueIndentScriptAndStyle": false,
+  "jsxBracketSameLine": true,
+  "arrowParens": "always"
+}

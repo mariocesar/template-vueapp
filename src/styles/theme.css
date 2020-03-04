@@ -1,0 +1,11 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  @apply flex flex-col min-h-screen text-gray-900 w-full leading-normal;
+}
+
+.font-sans {
+  font-family: var(--fontSansFamily);
+}

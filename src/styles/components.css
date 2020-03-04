@@ -1,0 +1,118 @@
+/* !! SVG Icon */
+
+.icon {
+  @apply inline-block h-6 w-6 fill-current;
+}
+
+/* !! Card */
+
+.card {
+  @apply bg-white border border-gray-200 mb-6 rounded overflow-hidden;
+
+  & .card-footer {
+    @apply flex justify-between items-center p-4;
+    @apply bg-gray-100 text-gray-600;
+    @apply border-t border-gray-200;
+  }
+}
+
+/* !! Buttons */
+
+.btn {
+  @apply inline-block leading-tight px-6 py-2 no-underline;
+  @apply border-2 border-transparent rounded;
+  @apply cursor-pointer;
+}
+
+.btn-secondary {
+  @apply text-gray-600 bg-gray-200;
+
+  &:hover {
+    @apply text-gray-600 border-gray-400 bg-gray-300;
+  }
+}
+
+.btn-submit,
+.btn-green,
+.btn-brand {
+  @apply bg-green-500 text-white;
+
+  &:hover {
+    @apply bg-green-600;
+  }
+}
+
+/* !! Utilities */
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.-rotate-90 {
+  transform: rotate(-90deg);
+}
+
+/* !! Forms */
+input,
+textarea,
+select {
+  &.form-input {
+    @apply appearance-none rounded;
+    @apply border-2 border-gray-100;
+    @apply bg-gray-100 text-gray-800;
+    @apply px-3 py-2;
+
+    &:focus {
+      outline: none;
+      @apply bg-white text-gray-800 border-blue-500;
+    }
+  }
+}
+
+.form {
+  & label[for] {
+    @apply text-gray-700 tracking-tight font-semibold;
+    @apply block mb-1;
+
+    & label[for] {
+      /* Reset inner labels */
+      @apply mb-0;
+    }
+  }
+
+  & span label[for] {
+    /* Reset inner labels */
+    @apply mb-0;
+  }
+
+  & .form-group {
+    margin-bottom: 1rem;
+  }
+
+  & .helptext {
+    @apply block text-gray-600 text-sm mt-2;
+  }
+
+  & ul.errorlist > li {
+    @apply text-orange-600 text-sm;
+    @apply p-4 border-2 border-orange-200 bg-orange-100;
+  }
+
+  & ul.errorlist {
+    @apply mb-4;
+  }
+
+  & .custom-file {
+    display: flex;
+    flex-direction: column;
+
+    & > label {
+      display: block-inline;
+      margin: 0;
+    }
+
+    & input[type="file"] {
+      display: none;
+    }
+  }
+}
